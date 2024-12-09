@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referer Test</title>
+    <title>Embed Dynamics 365</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Referer Test Page</h1>
-    <p>Click the link below to open the Dynamics CRM site:</p>
-    <a href="https://aurorabapenvd7fab.crmtest.dynamics.com/" target="_self">Open Dynamics CRM</a>
+    <h1>Dynamics 365 Embedded View in iframe</h1>
+    <iframe 
+        src="https://aurorabapenvd7fab.crmtest.dynamics.com/"
+        title="Dynamics 365">
+        Your browser does not support iframes.
+    </iframe>
 </body>
 </html>
