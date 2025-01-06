@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed Dynamics 365</title>
-    <style>
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-    </style>
+    <title>Form Submission with API Response</title>
 </head>
 <body>
-    <h1>Dynamics 365 Embedded View in iframe</h1>
-    <iframe 
-        src="https://aurorabapenvb7f02.crmtest.dynamics.com/"
-        title="Dynamics 365">
-        Your browser does not support iframes.
-    </iframe>
+    <h1>Submit GET Request and Show API Response</h1>
+
+    <!-- Form to trigger GET request to test-api -->
+    <form action="https://aurorabapenvb7f02.crmtest.dynamics.com/api/data/v9.2/applicationusers" method="GET" target="responseFrame">
+        <input type="submit" value="Submit Request">
+    </form>
+
+    <!-- Iframe to display the result of the GET request -->
+    <h2>API Response:</h2>
+    <iframe name="responseFrame" width="600" height="400"></iframe>
+
 </body>
 </html>
